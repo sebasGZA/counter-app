@@ -4,12 +4,11 @@ import React from 'react';
 
 //FC
 
-const PrimeraApp = () => {
+const PrimeraApp = ({ saludo = 'Hola mundo' }) => {
     // const saludo = {
     //     nombre: 'Sebatian',
     //     edad: 34
     // };
-    const saludo = 'Hola mundo'
     return (
         // <Fragment>
         //     <h1>Hola Mundo</h1><p>Mi primera Aplicación</p>
