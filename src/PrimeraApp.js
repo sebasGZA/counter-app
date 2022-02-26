@@ -1,10 +1,15 @@
 // import React, { Fragment } from 'react';
 import React from 'react';
+import PropTypes from 'prop-types'
 
 
 //FC
 
-const PrimeraApp = ({ saludo = 'Hola mundo' }) => {
+const PrimeraApp = ({ saludo }) => {
+    if (!saludo){
+        throw new Error('El saludo es necesario')
+    }
+    
     // const saludo = {
     //     nombre: 'Sebatian',
     //     edad: 34
@@ -19,6 +24,10 @@ const PrimeraApp = ({ saludo = 'Hola mundo' }) => {
             <h1>{saludo}</h1><p>Mi primera Aplicación</p>
         </>
     );
+}
+
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired,
 }
 
 export default PrimeraApp
