@@ -5,11 +5,14 @@ import PropTypes from 'prop-types'
 
 //FC
 
-const PrimeraApp = ({ saludo }) => {
-    if (!saludo){
+const PrimeraApp = ({
+    saludo,
+    subtitulo = 'Mi primera Aplicación'
+}) => {
+    if (!saludo) {
         throw new Error('El saludo es necesario')
     }
-    
+
     // const saludo = {
     //     nombre: 'Sebatian',
     //     edad: 34
@@ -21,9 +24,13 @@ const PrimeraApp = ({ saludo }) => {
         <>
             {/* <pre>{JSON.stringify(saludo, null, 3)}</pre><p>Mi primera Aplicación</p> */}
 
-            <h1>{saludo}</h1><p>Mi primera Aplicación</p>
+            <h1>{saludo}</h1><p>{subtitulo}</p>
         </>
     );
+}
+
+PrimeraApp.defaultProps = {
+    subtitulo: 'Mi primera Aplicación'
 }
 
 PrimeraApp.propTypes = {
