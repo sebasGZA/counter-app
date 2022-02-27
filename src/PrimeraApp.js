@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 const PrimeraApp = ({
     saludo,
-    subtitulo = 'Mi primera Aplicación'
+    subtitulo
 }) => {
     if (!saludo) {
         throw new Error('El saludo es necesario')
