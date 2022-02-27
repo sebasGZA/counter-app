@@ -19,7 +19,6 @@ describe('Pruebas en funciones de héroes', () => {
         const owner = 'DC'
         const heroes = getHeroesByOwner(owner)
         const heroesData = heroes.filter(h => h.owner === owner)
-        console.log(heroes.length)
         expect(heroes).toEqual(heroesData)
     })
 
@@ -27,7 +26,6 @@ describe('Pruebas en funciones de héroes', () => {
         const owner = 'Marvel'
         const heroes = getHeroesByOwner(owner)
         const heroesData = heroes.filter(h => h.owner === owner)
-        console.log(heroes.length)
         expect(heroes.length).toBe(heroesData.length)
     })
 
