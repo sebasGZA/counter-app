@@ -1,4 +1,4 @@
-import { getImage } from "../test-bases/11-async-await";
+import { getImage } from "../../test-bases/11-async-await";
 
 describe("Tests into 11-async-await", () => {
   test("getImage shoud return and url ", async () => {

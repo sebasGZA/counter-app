@@ -1,4 +1,4 @@
-import { getActiveUser, getUser } from "../test-bases/05-functions";
+import { getActiveUser, getUser } from "../../test-bases/05-functions";
 
 describe("Tests into 05-functions", () => {
   test("getUser must return an object", () => {

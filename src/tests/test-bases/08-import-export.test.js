@@ -1,4 +1,4 @@
-import { getHeroById, getHeroByOwner } from "../test-bases/08-import-export";
+import { getHeroById, getHeroByOwner } from "../../test-bases/08-import-export";
 
 describe("Tests into 08-import-export", () => {
   test("getHeroById should return a hero by an id", () => {

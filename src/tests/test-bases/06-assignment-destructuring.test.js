@@ -1,4 +1,4 @@
-import { usContext } from "../test-bases/06-assignment-destructuring";
+import { usContext } from "../../test-bases/06-assignment-destructuring";
 
 describe("Tests into 06-assignment-destructuring", () => {
   test("usContext should return an object", () => {
